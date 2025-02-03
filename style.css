@@ -44,7 +44,6 @@ section {
   max-height: 400px;
   border-radius: 8px;
   position: relative;
-  
   transform: none;
   cursor: pointer;
   transition: transform 0.5s;
@@ -81,6 +80,7 @@ section {
   word-wrap: break-word;
   max-width: 500px;
   overflow: hidden; /* Oculta o texto que ainda não apareceu */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .blink-cursor {
@@ -95,32 +95,17 @@ section {
 }
 
 @media screen and (max-width: 1024px) {
-  .my_bio {
-    position: absolute;
-    top: 140px;
-
-  }
-
-  #perfil_foto {
-    position: relative;
-    left: auto;
-    clear: right;
-  }
 
   #typed-text {
     font-size: 1rem;
   }
 
-  .hidden {
-    display: none;
-  }
-
   #description {
-    width: 100%;
-    position: absolute;
+    position: relative;
     text-align: center;
     float: none; 
-    top: 550px;
-    left: auto;
+    margin-top: 450px;
+    left: 50%;
+    transform: translate(-50%);
   }
 }
