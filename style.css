@@ -98,17 +98,17 @@ section {
   .my_bio {
     position: absolute;
     top: 140px;
-    left: 200px;
+
   }
-  
-  #perfil-foto {
-    width: 100px;
+
+  #perfil_foto {
+    position: relative;
+    left: auto;
     clear: right;
   }
 
   #typed-text {
     font-size: 1rem;
-    left: 40px;
   }
 
   .hidden {
@@ -116,10 +116,11 @@ section {
   }
 
   #description {
+    width: 100%;
     position: absolute;
     text-align: center;
     float: none; 
     top: 550px;
-    left: 190px;
+    left: auto;
   }
 }
