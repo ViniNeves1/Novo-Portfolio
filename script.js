@@ -21,20 +21,23 @@ document.getElementById("perfil_foto").addEventListener('click', function() {
 document.getElementById("perfil_foto").addEventListener('click', function() {
   const perfilPhoto = document.getElementById('perfil_foto');
   const descricao = document.getElementById('description');
-  const bioDiv = document.getElementsByClassName('my_bio')
+  const bioDiv = document.getElementsByClassName('my_bio');
+  const sobreImg = document.getElementsByClassName('sobre-img')
   
   if ($(window).width() < 1024 && perfilPhoto.style.transform === 'translateX(100px)') {
     perfilPhoto.style.transform = 'translateX(0)'; // Retorna ao normal
     descricao.classList.add('hidden');
     perfilPhoto.classList.remove('float-l');
     bioDiv.classList.remove('hidden');
+    sobreImg.classList.add('hidden');
     descricao.style.opacity = 0;
   } else {
     perfilPhoto.style.transform = 'translateX(100px)';
     descricao.classList.remove('hidden');
-    descricao.classList.add('float-r')
-    perfilPhoto.classList.add('float-l')
-    bioDiv.classList.add('hidden')
+    descricao.classList.add('float-r');
+    perfilPhoto.classList.add('float-l');
+    bioDiv.classList.add('hidden');
+    sobreImg.classList.add('hidden');
     setTimeout(() => {
       descricao.style.opacity = 1;
     }, 50);
