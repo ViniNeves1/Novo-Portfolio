@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinicius dos Santos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" fixed>
           <div class="container-fluid">
             <a href="#" class="navbar-brand">Vinicius Neves</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,24 +22,16 @@
                   <a href="#" class="nav-link active" aria-current="page">Início</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link active">Sobre</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projetos</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#" class="dropdown-item">Projeto #1</a></li>
-                    <li><a href="#" class="dropdown-item">Projeto #2</a></li>
-                    <li><a href="#" class="dropdown-item">Projeto #3</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a href="#" class="dropdown-item">Mais projetos</a></li>
-                  </ul>
+                  <a href="#sobre" class="nav-link active">Sobre</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link active">Contato</a>
+                  <a href="#projetos" class="nav-link active">Projetos</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contato" class="nav-link active">Contato</a>
                 </li>
               </ul>
             </div>
-            
           </div>
         </nav>
     </header>
@@ -67,28 +58,21 @@
     <hr>
     <section id="projetos">
       <div class="container">
-
-        <div class="col row-lg">
-
-          <div class="projeto__1 col m-auto">
-            <img src="./img/projeto 1.jpg" alt="" class="w-75">
-            <span class="text-center">Projeto 1</span>
+        <div class="col" id="projects">
+          <div class="projeto col mb-3 text-center">
+            <h4 class="text-center pb-2">Projeto 1</h4>
+            <img src="./img/projeto 1.jpg" alt="" class="w-50 rounded img-projeto">
           </div>
-          <div class="projeto__2 col">
-            <img src="" alt="">
-            <h4>Projeto 1</h4>
+          <div class="projeto col mb-3 text-center">
+            <h4 class="text-center pb-2">Projeto 2</h4>
+            <img src="./img/projeto 2.jpg" alt="" class="w-50 rounded img-projeto">
           </div>
-          <div class="projeto__3 col">
-            <img src="" alt="">
-            <h4>Projeto 1</h4>
+          <div class="projeto col mb-3 text-center">
+            <h4 class="text-center pb-2">Projeto 3</h4>
+            <img src="./img/projeto 3.jpg" alt="" class="w-50 rounded img-projeto">
           </div>
-
-
-
         </div>
-
       </div>
-
     </section>
     <hr>
     <section id="contato">
@@ -96,19 +80,20 @@
         <form>
           <div class="row">
             <div class="mb-3 col">
-              <label for="name">Nome</label>
-              <input type="text" class="form-control" id="inputName">
+              <label for="name" class="label__size">Nome</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Nome">
             </div>
             <div class="mb-3 col">
-              <label for="contact">Email</label>
-              <input type="email" class="form-control" id="inputEmail">
+              <label for="contact" class="label__size">Email</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Seu melhor e-mail">
             </div>
             <div class="mb-3" style="height: 150px;">
-              <label for="description">Assunto</label>
-              <input type="textarea" class="form-control h-100" id="inputDescription">
+              <label for="description" class="label__size">Assunto</label>
+              <textarea class="form-control h-100" id="inputDescription" placeholder="Descrição"></textarea>
             </div>
           </div>
         </form>
+        <button class="w-100 mt-5 rounded">Enviar</button>
       </div>
     </section>
 

@@ -123,6 +123,20 @@ section {
   clear: both;
 }
 
+.label__size {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+#contato button {
+  height: 55px;
+  background-color: blue;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
 
 @keyframes blinkCursor {
   50% {
@@ -133,7 +147,7 @@ section {
 @media screen and (max-width: 1024px) {
 
   #typed-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   #description {
@@ -143,11 +157,6 @@ section {
     margin-top: 450px;
     left: 50%;
     transform: translate(-50%);
-  }
-
-  .sobre__title {
-    position: relative;
-    margin-top: -100px;
   }
 
   .sobre-img {
