@@ -150,7 +150,7 @@ section {
   #perfil_foto {
     left: 50%;
     transform: translate(-50%);
-    top: 50px;
+    top: 40px;
   }
 
   #typed-text {
