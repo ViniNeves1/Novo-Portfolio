@@ -63,6 +63,7 @@ window.addEventListener('resize', trocaClasse);
 
 const imgProjetos = document.getElementsByClassName('img-projeto');
 
+
 function trocaTamanho() {
     for (let imgProjeto of imgProjetos) {
         if (window.innerWidth < 1024) {
@@ -78,3 +79,17 @@ function trocaTamanho() {
 trocaTamanho();
 
 window.addEventListener('resize', trocaTamanho);
+
+const socialMedia = document.getElementsByClassName('social__media');
+
+function clear() {
+    if (window.innerWidth < 1024) {
+        socialMedia.classList.remove('clear');
+    } else {
+        socialMedia.classList.add('clear');
+    }
+}
+
+clear();
+
+window.addEventListener('resize', clear);
