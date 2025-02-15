@@ -4,14 +4,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const sobreImg = document.getElementsByClassName('sobre-img')[0];
   
     // Define os estilos iniciais ao carregar a página
-    perfilPhoto.style.transform = 'translateX(100px)';
+    
     descricao.classList.remove('hidden');
     descricao.classList.add('float-r');
     perfilPhoto.classList.add('float-l');
 
     if (window.innerWidth < 1024) {
         sobreImg.classList.add('hidden');
-        perfilPhoto.style.transform = 'translateX(90px)';
     }
 
     setTimeout(() => {
@@ -55,7 +54,6 @@ function trocaClasse() {
     } else {
         projects.classList.remove('col');
         projects.classList.add('row');
-
     }
 }
 

@@ -44,13 +44,6 @@ section {
   max-height: 400px;
   border-radius: 8px;
   position: relative;
-  transform: none;
-  cursor: pointer;
-  transition: transform 0.5s;
-}
-
-#perfil_foto:hover {
-  transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
 }
 
@@ -145,6 +138,11 @@ section {
 }
 
 @media screen and (max-width: 1024px) {
+  #perfil_foto {
+    left: 50%;
+    transform: translate(-50%);
+    top: 25px;
+  }
 
   #typed-text {
     font-size: 1.2rem;
