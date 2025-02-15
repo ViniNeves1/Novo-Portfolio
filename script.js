@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (window.innerWidth < 1024) {
         sobreImg.classList.add('hidden');
+        perfilPhoto.style.transform = 'translateX(90px)';
     }
 
     setTimeout(() => {
