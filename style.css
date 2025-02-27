@@ -92,7 +92,6 @@ section {
   float: right;
   border-radius: 35px 0 35px 0;
   margin-left: 50px;
-
 }
 
 .descricao__detalhada {
@@ -160,6 +159,28 @@ section {
   color: purple;
 }
 
+.principal__buttons {
+  position: relative;
+  top: 30px;
+}
+
+.principal__buttons span {
+  margin: 0 10px;
+}
+
+.principal__buttons span button {
+  width: 200px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: rgb(119, 36, 36);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 1.2rem;
+  position: relative;
+  left: 130px;
+}
+
 @keyframes blinkCursor {
   50% {
     border-color: transparent;
@@ -185,7 +206,7 @@ section {
     float: none; 
     margin-top: 450px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translate(-35%);
   }
 
   .sobre-img {
@@ -193,12 +214,47 @@ section {
   }
 
   .descricao__detalhada {
+    top: -150px;
     font-size: 1.3rem;
   }
 
   .social__media {
-    top: 0;
+    top: 15px;
     left: 0;
     transform: none;
+  }
+
+  .social__media__icons a {
+    margin: 0 10px;
+  }
+
+  .languages {
+    top: 50px;
+  }
+
+  .languages ul li {
+    position: relative;
+    top: -80px;
+    margin: 0 10px;
+  }
+
+  .principal__buttons {
+    position: relative;
+    top: 30px;
+  }
+
+  .principal__buttons span {
+    margin: 0 10px;
+  }
+
+  .principal__buttons span button {
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(119, 36, 36);
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 600;
+    font-size: 1.2rem;
   }
 }
