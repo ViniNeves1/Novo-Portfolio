@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const perfilPhoto = document.getElementById('perfil_foto');
-  const descricao = document.getElementById('description');
-  const sobreImg = document.getElementsByClassName('sobre-img')[0];
-  
+const perfilPhoto = document.getElementById('perfil_foto');
+const descricao = document.getElementById('description');
+const sobreImg = document.getElementsByClassName('sobre-img')[0];
+
     // Define os estilos iniciais ao carregar a página
     
     descricao.classList.remove('hidden');
@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(() => {
         descricao.style.opacity = 1;
     }, 50);
-  });
+});
 
-  document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     
     const descriptionDiv = document.getElementById("description");
     const textElement = document.getElementById("typed-text");
@@ -90,6 +90,16 @@ function clear() {
     }
 }
 
-clear();
-
 window.addEventListener('resize', clear);
+
+const projectButton = document.getElementById("hero__projects__button");
+
+function scrollToProjects(){
+    const projectsSection = document.getElementById("projetos");
+    if (projectsSection) {
+        projectsSection.scrollIntoView({behavior: "smooth"})
+    }
+}
+
+projectButton.addEventListener("click", scrollToProjects);
+

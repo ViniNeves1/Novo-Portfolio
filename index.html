@@ -14,7 +14,7 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" fixed>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container-fluid">
             <a href="#" class="navbar-brand">Vinicius Neves</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,10 +53,10 @@
             <a href="https://www.instagram.com/neves_vinicius1/" class="insta btn"><i class="bi bi-instagram" style="font-size: 2rem; color: white;"></i></a>
             <a href="https://www.linkedin.com/in/vin%C3%ADcius-dos-santos-ferreira-neves-193881169/" class="linkedIn btn"><i class="bi bi-linkedin" style="font-size: 2rem; color: white;"></i></a>
           </div>
-          <div class="principal__buttons">
-            <span class=""><button>Currículo</button></span>
-            <span><button>Projetos</button></span>
-          </div>
+        </div>
+        <div class="principal__buttons">
+          <span><button>Currículo</button></span>
+          <span><button id="hero__projects__button">Projetos</button></span>
         </div>
       </div>
     </section>
@@ -101,21 +101,23 @@
       <div class="formulário container">
         <form>
           <div class="row">
-            <div class="mb-3 col">
+            <div class="mb-3 col grupoNome">
               <label for="name" class="label__size">Nome</label>
               <input type="text" class="form-control" id="inputName" placeholder="Nome">
             </div>
-            <div class="mb-3 col">
+            <div class="mb-3 col grupoNome">
               <label for="contact" class="label__size">Email</label>
               <input type="email" class="form-control" id="inputEmail" placeholder="Seu melhor e-mail">
             </div>
-            <div class="mb-3" style="height: 150px;">
+            <div class="mb-3 grupoNome" style="height: 150px;">
               <label for="description" class="label__size">Assunto</label>
               <textarea class="form-control h-100" id="inputDescription" placeholder="Mensagem"></textarea>
             </div>
           </div>
         </form>
-        <button class="w-100 mt-5 rounded">Enviar</button>
+        <div class="semdBtn">
+          <span><button id="sendBtn" class="w-100 mt-5 rounded">Enviar</button></span>
+        </div>
       </div>
     </section>
 

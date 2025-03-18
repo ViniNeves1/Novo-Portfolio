@@ -77,11 +77,6 @@ section {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.blink-cursor {
-  border-right: 2px solid #f8f9fa; /* Efeito de cursor piscando */
-  animation: blinkCursor 0.8s infinite;
-}
-
 .sobre-img {
   display: flex;
   width: 400px;
@@ -160,8 +155,15 @@ section {
 }
 
 .principal__buttons {
+  display: flex;
+  justify-content: center;
   position: relative;
   top: 30px;
+}
+
+.principal__buttons span button:hover {
+  background-color: rgb(66, 12, 12);
+  transform: scale(1.2);
 }
 
 .principal__buttons span {
@@ -177,26 +179,72 @@ section {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
   font-size: 1.2rem;
-  position: relative;
-  left: 130px;
+  transition: transform 0.3s ease;
 }
 
-@keyframes blinkCursor {
-  50% {
-    border-color: transparent;
-  }
+.img-projeto {
+  transition: transform 0.3s ease;
+}
+
+.img-projeto:hover {
+  transform: scale(1.2);
+}
+
+.sendBtn span button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  background-color: rgb(119, 36, 36);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+#sendBtn:hover {
+  background-color: rgb(119, 36, 36); /* Keep hover background color */
+  transform: scale(1.1);
+}
+
+.grupoNome label {
+  color: rgb(119, 36, 36);
+}
+
+.grupoNome input {
+  color: white;
+  border: 2px solid rgb(119, 36, 36);
+  background: transparent;
+  border-radius: 5px;
+  height: 60px;
+  padding: 0 1rem;
+}
+
+.grupoNome textarea {
+  color: white;
+  border: 2px solid rgb(119, 36, 36);
+  background: transparent;
+  border-radius: 5px;
+  padding: 0 1rem;
+}
+
+.grupoNome input:focus{
+  background-color: transparent;
+}
+
+.grupoNome textarea:focus {
+  background-color: transparent;
 }
 
 @media screen and (max-width: 1024px) {
   #perfil_foto {
     left: 50%;
     transform: translate(-50%);
-    top: 40px;
+    top: 25%;
   }
 
   #typed-text {
     position: relative;
-    top: 20px;
+    top: 20%;
     font-size: 1.2rem;
   }
 
@@ -206,7 +254,7 @@ section {
     float: none; 
     margin-top: 450px;
     left: 50%;
-    transform: translate(-35%);
+    transform: translate(-50%);
   }
 
   .sobre-img {
@@ -214,12 +262,12 @@ section {
   }
 
   .descricao__detalhada {
-    top: -150px;
+    margin-top: -50%;
     font-size: 1.3rem;
   }
 
   .social__media {
-    top: 15px;
+    top: -1%;
     left: 0;
     transform: none;
   }
@@ -239,16 +287,17 @@ section {
   }
 
   .principal__buttons {
+    flex-direction: column;
     position: relative;
     top: 30px;
   }
 
   .principal__buttons span {
-    margin: 0 10px;
+    margin-bottom: 10px;
   }
 
   .principal__buttons span button {
-    width: 200px;
+    width: 250px;
     padding: 10px 20px;
     border-radius: 25px;
     border: none;
@@ -256,5 +305,10 @@ section {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 600;
     font-size: 1.2rem;
+    display: flex;
+    top: -20%;
+    margin-left: 120px;
+    justify-content: center;
+    font-size: 1.4rem;
   }
 }
