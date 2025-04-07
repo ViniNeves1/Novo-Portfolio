@@ -191,6 +191,8 @@ section {
     width: 370px;
     position: relative;
     top: 20px;
+    left: 50%;
+    transform: translate(-50%);
     font-size: 1.0rem;
   }
 
