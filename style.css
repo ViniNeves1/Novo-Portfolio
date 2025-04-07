@@ -77,11 +77,6 @@ section {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.blink-cursor {
-  border-right: 2px solid #f8f9fa; /* Efeito de cursor piscando */
-  animation: blinkCursor 0.8s infinite;
-}
-
 .sobre-img {
   display: flex;
   width: 400px;
@@ -181,20 +176,14 @@ section {
   left: 130px;
 }
 
-@keyframes blinkCursor {
-  50% {
-    border-color: transparent;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   section {
-    width: 100%;
+    width: 80%;
   }
 
   #perfil_foto {
-    left: 50%;
-    transform: translate(-50%);
+    left: 70%;
+    transform: translate(-55%);
     top: 40px;
   }
 
@@ -225,8 +214,8 @@ section {
 
   .social__media {
     top: 15px;
-    left: 0;
-    transform: none;
+    left: 70%;
+    transform: translate(-50%);
   }
 
   .social__media__icons a {
@@ -246,7 +235,7 @@ section {
   .principal__buttons {
     position: relative;
     margin-top: -30px;
-    margin-left: 1%;
+    margin-left: -7%;
     transform: translate(-25%);
   }
 
