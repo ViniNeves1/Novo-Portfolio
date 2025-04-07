@@ -214,7 +214,7 @@ section {
   }
 
   .descricao__detalhada {
-    top: -150px;
+    top: -60px;
     font-size: 1.3rem;
   }
 
@@ -240,7 +240,9 @@ section {
 
   .principal__buttons {
     position: relative;
-    top: 30px;
+    margin-top: -30px;
+    margin-left: 1%;
+    transform: translate(-25%);
   }
 
   .principal__buttons span {
@@ -256,5 +258,7 @@ section {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 600;
     font-size: 1.2rem;
+    display: inline-flex;
+    flex-direction: column;
   }
 }
