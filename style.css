@@ -210,8 +210,8 @@ section {
   }
 
   .descricao__detalhada {
-    top: -60px;
-    font-size: 1.3rem;
+    top: -40px;
+    font-size: 1.1rem;
   }
 
   .social__media {
@@ -236,25 +236,17 @@ section {
 
   .principal__buttons {
     position: relative;
-    margin-top: -30px;
+    margin-top: -20px;
     margin-left: -7%;
     transform: translate(-25%);
   }
 
   .principal__buttons span {
-    margin: 0 10px;
+    margin: 0 30px;
   }
 
   .principal__buttons span button {
-    width: 200px;
-    padding: 10px 20px;
-    border-radius: 25px;
-    border: none;
-    background-color: rgb(119, 36, 36);
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 600;
-    font-size: 1.2rem;
-    display: inline-flex;
-    flex-direction: column;
+    display: inline-block;
+    width: 130px;
   }
 }
