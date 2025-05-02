@@ -103,3 +103,17 @@ function scrollToProjects(){
 
 projectButton.addEventListener("click", scrollToProjects);
 
+$(document).ready(function () {
+
+    function removerActiveClassTheme() {
+        $('.themes-list li a').removeClass('active');
+    }
+
+    $('.themes-list li').on('click', function() {
+        let linkElement = $(this).find('a');
+        let theme = linkElement.data('theme');
+        $('html').attr('data-bs-theme', theme);
+        removerActiveClassTheme();
+        linkElement.addClass('active');
+    })
+})
