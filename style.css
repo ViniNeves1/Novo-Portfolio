@@ -186,7 +186,7 @@ section {
 }
 
 .img-projeto:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 #sendBtn span button {
@@ -201,7 +201,7 @@ section {
 
 #sendBtn:hover {
   background-color: rgb(119, 36, 36); /* Keep hover background color */
-  transform: scale(1.1);
+  transform: scale(1.02);
 }
 
 .grupoNome label {
@@ -227,10 +227,16 @@ section {
 
 .grupoNome input:focus{
   background-color: transparent;
+  border-color: rgb(119, 36, 36);
+  transform: scale(1.01);
+  box-shadow: none;
 }
 
 .grupoNome textarea:focus {
   background-color: transparent;
+  transform: scale(1.01);
+  border-color: rgb(119, 36, 36);
+  box-shadow: none;
 }
 
 ::placeholder {
